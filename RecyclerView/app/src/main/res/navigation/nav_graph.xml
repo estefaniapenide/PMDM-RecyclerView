@@ -3,26 +3,57 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/MainFragment">
 
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.example.recyclerview.FirstFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        android:id="@+id/MainFragment"
+        android:name="com.example.recyclerview.MainFragment"
+        android:label="@string/main_fragment_label"
+        tools:layout="@layout/fragment_main">
 
         <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            android:id="@+id/action_MainFragment_to_Ej01aFragment"
+            app:destination="@id/Ej01aFragment" />
+        <action
+            android:id="@+id/action_MainFragment_to_ej01bFragment"
+            app:destination="@id/ej01bFragment" />
+        <action
+            android:id="@+id/action_MainFragment_to_ej02Fragment"
+            app:destination="@id/ej02Fragment" />
+        <action
+            android:id="@+id/action_MainFragment_to_ej03Fragment"
+            app:destination="@id/ej03Fragment" />
+        <action
+            android:id="@+id/action_MainFragment_to_ej04Fragment"
+            app:destination="@id/ej04Fragment" />
+        <action
+            android:id="@+id/action_MainFragment_to_ej05Fragment"
+            app:destination="@id/ej05Fragment" />
     </fragment>
     <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.example.recyclerview.SecondFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
-
-        <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
-    </fragment>
+        android:id="@+id/Ej01aFragment"
+        android:name="com.example.recyclerview.Ej01aFragment"
+        android:label="Fragment Ej01a"
+        tools:layout="@layout/fragment_ej01a"/>
+    <fragment
+        android:id="@+id/ej01bFragment"
+        android:name="com.example.recyclerview.Ej01bFragment"
+        android:label="fragment_ej01b"
+        tools:layout="@layout/fragment_ej01b" />
+    <fragment
+        android:id="@+id/ej02Fragment"
+        android:name="com.example.recyclerview.Ej02Fragment"
+        android:label="Ej02Fragment" />
+    <fragment
+        android:id="@+id/ej03Fragment"
+        android:name="com.example.recyclerview.Ej03Fragment"
+        android:label="Ej03Fragment" />
+    <fragment
+        android:id="@+id/ej04Fragment"
+        android:name="com.example.recyclerview.Ej04Fragment"
+        android:label="Ej04Fragment" />
+    <fragment
+        android:id="@+id/ej05Fragment"
+        android:name="com.example.recyclerview.ej05.Ej05Fragment"
+        android:label="Ej05Fragment" />
 </navigation>
